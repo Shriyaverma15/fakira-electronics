@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakira Electronics (FAQs)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Arial', sans-serif;
+            color: #030032;
+            overflow-x: hidden;
+        }
+
+        
+        header {
+            background-color: #030032;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #e14e4e;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        
+        .section {
+            background-color: #030032;
+            color: white;
+            padding: 60px 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .section h1, .section h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+
+        .section h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        
+        .section h3 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #fff;
+            background: linear-gradient(90deg, #030032, #030032);
+            padding: 10px 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: double underline;
+        }
+
+        .faq-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        
+        .faq-item {
+            background-color: #f4f6f9;
+            color: #030032;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #e14e4e;
+            font-size: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: #ff4e50;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            color: #030032;
+            padding-left: 20px;
+        }
+
+        
+        footer {
+            background-color: #030032;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #e14e4e;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 1200px) {
+            .section h1 {
+                font-size: 40px;
+            }
+
+            .section h3 {
+                font-size: 32px;
+            }
+
+            .faq-question {
+                font-size: 18px;
+            }
+
+            .faq-answer {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            .section h1 {
+                font-size: 35px;
+            }
+
+            .section h3 {
+                font-size: 28px;
+            }
+
+            .faq-question {
+                font-size: 16px;
+            }
+
+            .faq-answer {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .section h1 {
+                font-size: 30px;
+            }
+
+            .section h3 {
+                font-size: 24px;
+            }
+
+            .faq-question {
+                font-size: 15px;
+            }
+
+            .faq-answer {
+                font-size: 13px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .section h1 {
+                font-size: 25px;
+            }
+
+            .section h3 {
+                font-size: 20px;
+            }
+
+            .faq-question {
+                font-size: 14px;
+            }
+
+            .faq-answer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product_listing_page.html">Product List</a></li>
+                <li><a href="product_detail.html">Product Detail</a></li>
+                <li><a href="about_us_page.html">About Us</a></li>
+                <li><a href="contact_us_page.html">Contact Us</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="terms_and_conditions_page.html">Terms & Conditions</a></li>
+                <li><a href="FAQs_page.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="section">
+        <h1>Frequently Asked Questions (FAQs)</h1>
+    </div>
+
+    
+    <div class="section">
+        <h3><u>General Questions</u></h3>
+        <div class="faq-list">
+            <div class="faq-item">
+                <p class="faq-question">What products do you offer at Fakira Electronics?</p>
+                <p class="faq-answer">We offer a wide range of electronics including smartphones, wristwatches, wall clocks, tablets, accessories, headphones, earphones and audio equipment. All our products are sourced from trusted brands to ensure quality and durability.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">How can I place an order on your website?</p>
+                <p class="faq-answer">Although you cannot place an order directly through the website, you can contact us via WhatsApp, Instagram, or other communication channels to inform us of your desired product. We will reserve it for you, and you can visit our store in person to complete the billing and purchasing process.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">What payment methods do you accept?</p>
+                <p class="faq-answer">We accept various payment methods, including credit/debit cards, online payment options such as PhonePe and Paytm, and most importantly, cash payments as well.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Do you offer any kind of shipping or home delivery?</p>
+                <p class="faq-answer">Apologies, but we are not offering delivery services at the moment. However, we may consider introducing this option in the future.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Do your products come with a warranty?</p>
+                <p class="faq-answer">Yes, we do offer warranties and guarantees on products, which vary depending on the product and brand. The duration of the warranty may range from 6 months to 2 years, as it is determined by the specific product and its brand.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Can I check product availability on the Fakira Electronics website?</p>
+                <p class="faq-answer">Of course, you can check product availability on the Fakira Electronics website, either from the <a href="Product_listing_page.html">Product Listing </a> page or by directly contacting the owner and staff. Their contact details can be found on the <a href="Contact_us_page.html">Contact Us</a> page.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">How can I place an order on your website?</p>
+                <p class="faq-answer">Although you cannot place an order directly through the website, you can contact us via WhatsApp, Instagram, or other communication channels to inform us of your desired product. We will reserve it for you, and you can visit our store in person to complete the billing and purchasing process.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Where is the offline Fakira Electronics store located</p>
+                <p class="faq-answer">Our physical store is located at Main Bazar , Gandhi Chowk Hamirpur, Himachal Pradesh , 177001. Feel free to visit us during business hours to view our products in person or speak with a representative.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">What is your return policy?</p>
+                <p class="faq-answer">We offer a 6-day return policy for most items, with returns accepted only after 12 PM on business days. Products must be in their original condition with packaging intact. Certain exceptions apply, particularly for opened electronics. Please refer to our returns page for full details.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">How do I contact customer support if I have issues with my order on Fakira Electronics?</p>
+                <p class="faq-answer">If you need assistance with your order, you can contact our customer support team through the "Contact Us" page. You can reach us via email or phone, and we’ll be happy to help resolve any issues.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>Stay connected with Fakira Electronics through our social media profiles:</p>
+        <a href="https://www.facebook.com/share/1BeY2MhqGZ/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/fakira_electronic_?igsh=Zmplb2FkNXZjdnNv" target="_blank">Instagram</a>
+        <p>For Further Information: <a href="contact_us_page.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

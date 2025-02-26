@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verma Electronics (Product List)</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Arial', sans-serif;
+            color: #030032;
+        }
+
+        
+        header {
+            background-color: #030032;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #e14e4e;
+            border-radius: 5px;
+        }
+
+        
+        .ourproductslist {
+            text-align: center;
+            padding: 50px 0;
+            font-size: 50px;
+            font-weight: bold;
+            color: #030032;
+            background-color: #e14e4e;
+        }
+
+        
+        .product-category {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .product-category h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #030032;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #030032;
+            border: 2px solid #ff4c4c;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        
+        footer {
+            background-color: #030032;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-top: 3px solid #e14e4e;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 1200px) {
+            .ourproductslist {
+                font-size: 40px;
+                padding: 40px 0;
+            }
+
+            .product-category h2 {
+                font-size: 32px;
+            }
+
+            .product-card {
+                width: 220px;
+            }
+
+            .product-card h3 {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            .ourproductslist {
+                font-size: 35px;
+                padding: 35px 0;
+            }
+
+            .product-category h2 {
+                font-size: 28px;
+            }
+
+            .product-card {
+                width: 200px;
+            }
+
+            .product-card h3 {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .ourproductslist {
+                font-size: 30px;
+                padding: 30px 0;
+            }
+
+            .product-category h2 {
+                font-size: 24px;
+            }
+
+            .product-card {
+                width: 180px;
+            }
+
+            .product-card h3 {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .ourproductslist {
+                font-size: 25px;
+                padding: 25px 0;
+            }
+
+            .product-category h2 {
+                font-size: 20px;
+            }
+
+            .product-card {
+                width: 160px;
+            }
+
+            .product-card h3 {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product_listing_page.html">Product List</a></li>
+                <li><a href="product_detail.html">Product Detail</a></li>
+                <li><a href="about_us_page.html">About Us</a></li>
+                <li><a href="contact_us_page.html">Contact Us</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="terms_and_conditions_page.html">Terms & Conditions</a></li>
+                <li><a href="FAQs_page.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="ourproductslist">
+        <h1>Our Products</h1>
+    </div>
+
+    
+    <div class="product-category">
+        <h2>Smartphones</h2>
+        <div class="container">
+            <div class="product-card">
+                <img src="oppo.jpeg" alt="OPPO Smartphone">
+                <h3>OPPO SMART PHONES</h3>
+            </div>
+            <div class="product-card">
+                <img src="one plus.jpeg" alt="OnePlus Smartphone">
+                <h3>ONE PLUS SMART PHONES</h3>
+            </div>
+            <div class="product-card">
+                <img src="vivo (1).jpeg" alt="VIVO Smartphone">
+                <h3>VIVO SMART PHONES</h3>
+            </div>
+            <div class="product-card">
+                <img src="redmi.jpeg" alt="Redmi Smartphone">
+                <h3>REDMI SMART PHONES</h3>
+            </div>
+            <div class="product-card">
+                <img src="iphone.jpeg" alt="Apple Smartphone">
+                <h3>APPLE SMART PHONES</h3>
+            </div>
+            <div class="product-card">
+                <img src="poco.jpeg" alt="Poco Smartphone">
+                <h3>POCO SMART PHONES</h3>
+            </div>
+            <div class="product-card">
+                <img src="samsung.jpeg" alt="Samsung Smartphone">
+                <h3>SAMSUNG SMART PHONES</h3>
+            </div>
+            <div class="product-card">
+                <img src="realme.jpeg" alt="Realme Smartphone">
+                <h3>REALME SMART PHONES</h3>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="product-category">
+        <h2>Tablets</h2>
+        <div class="container">
+            <div class="product-card">
+                <img src="redmi (1).jpeg" alt="Redmi Tablet">
+                <h3>REDMI TABLET</h3>
+            </div>
+            <div class="product-card">
+                <img src="samsung (1).jpeg" alt="Samsung Tablet">
+                <h3>SAMSUNG TABLET</h3>
+            </div>
+            <div class="product-card">
+                <img src="redmi (2).jpeg" alt="Redmi Tablet">
+                <h3>REDMI TABLET</h3>
+            </div>
+            <div class="product-card">
+                <img src="samsung (2).jpeg" alt="Samsung Tablet">
+                <h3>SAMSUNG TABLET</h3>
+            </div>
+            <div class="product-card">
+                <img src="redmi (3).jpeg" alt="Redmi Tablet">
+                <h3>REDMI TABLET</h3>
+            </div>
+            <div class="product-card">
+                <img src="samsung (3).jpeg" alt="Samsung Tablet">
+                <h3>GALAXY TABLET</h3>
+            </div>
+            <div class="product-card">
+                <img src="redmi (4).jpeg" alt="Redmi Tablet">
+                <h3>REDMI TABLET</h3>
+            </div>
+            <div class="product-card">
+                <img src="samsung (4).jpeg" alt="Samsung Tablet">
+                <h3>SAMSUNG TABLET</h3>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="product-category">
+        <h2>Watches</h2>
+        <div class="container">
+            <div class="product-card">
+                <img src="titan (1).jpeg" alt="Titan Watch">
+                <h3>TITAN WATCH</h3>
+            </div>
+            <div class="product-card">
+                <img src="sonata (1).jpeg" alt="Sonata Watch">
+                <h3>SONATA WATCH</h3>
+            </div>
+            <div class="product-card">
+                <img src="titan (2).jpeg" alt="Titan Watch">
+                <h3>TITAN WATCH</h3>
+            </div>
+            <div class="product-card">
+                <img src="sonata (2).jpeg" alt="Sonata Watch">
+                <h3>SONATA WATCH</h3>
+            </div>
+            <div class="product-card">
+                <img src="fast (1).jpeg" alt="Laptop 1">
+                <h3>FASTRACK WATCHES</h3>
+            </div>
+            <div class="product-card">
+                <img src="hmt (1).jpeg" alt="Laptop 2">
+                <h3>HMT WATCHES</h3>
+            </div>
+            <div class="product-card">
+                <img src="fast (2).jpeg" alt="Laptop 3">
+                <h3>FASTRACK WATCHES</h3>
+            </div>
+            <div class="product-card">
+                <img src="hmt (2).jpeg" alt="Laptop 4">
+                <h3>HMT WATCHES</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-category">
+        <h2>Smart Watches</h2>
+        <div class="container">
+            <div class="product-card">
+                <img src="fastrck.jpeg" alt="Laptop 1">
+                <h3>FASTRACK SMART WATCH</h3>
+            </div>
+            <div class="product-card">
+                <img src="Fire bolt watch.jpeg" alt="Laptop 2">
+                <h3>FIRE BOLT SMART WATCH</h3>
+            </div>
+            <div class="product-card">
+                <img src="gizmore (1).jpeg" alt="Laptop 3">
+                <h3>GIZMORE SMART WATCH</h3>
+            </div>
+            <div class="product-card">
+                <img src="gizmore (2).jpeg" alt="Laptop 4">
+                <h3>GIZMORE SMART WATCH</h3>
+            </div>
+            <div class="product-card">
+                <img src="noise.jpeg" alt="Laptop 1">
+                <h3>NOISE SMART WATCHES</h3>
+            </div>
+            <div class="product-card">
+                <img src="pebble.jpeg" alt="Laptop 2">
+                <h3>PEBBLE SMART WATCHES</h3>
+            </div>
+            <div class="product-card">
+                <img src="u and i (2).jpeg" alt="Laptop 3">
+                <h3>U & I SMART WATCHES</h3>
+            </div>
+            <div class="product-card">
+                <img src="U AND I.jpeg" alt="Laptop 4">
+                <h3>U & I SMART WATCHES</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-category">
+        <h2>Wall Clocks</h2>
+        <div class="container">
+            <div class="product-card">
+                <img src="WALL CLOCK (1).jpeg" alt="Laptop 1">
+                <h3>WALL CLOCK</h3>
+            </div>
+            <div class="product-card">
+                <img src="WALL CLOCK (2).jpeg" alt="Laptop 2">
+                <h3>WALL CLOCK</h3>
+            </div>
+            <div class="product-card">
+                <img src="WALL CLOCK (3).jpeg" alt="Laptop 3">
+                <h3>WALL CLOCK</h3>
+            </div>
+            <div class="product-card">
+                <img src="WALL CLOCK (4).jpeg" alt="Laptop 4">
+                <h3>WALL CLOCK</h3>
+            </div>
+            <div class="product-card">
+                <img src="WALL CLOCK (5).jpeg" alt="Laptop 1">
+                <h3>WALL CLOCK</h3>
+            </div>
+            <div class="product-card">
+                <img src="WALL CLOCK (6).jpeg" alt="Laptop 2">
+                <h3>WALL CLOCK</h3>
+            </div>
+            <div class="product-card">
+                <img src="WALL CLOCK (7).jpeg" alt="Laptop 3">
+                <h3>WALL CLOCK</h3>
+            </div>
+            <div class="product-card">
+                <img src="WALL CLOCK (8).jpeg" alt="Laptop 4">
+                <h3>WALL CLOCK</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-category">
+        <h2>Accessories (1)</h2>
+        <div class="container">
+            <div class="product-card">
+                <img src="speaker.jpeg" alt="Laptop 1">
+                <h3>SPEAKER</h3>
+            </div>
+            <div class="product-card">
+                <img src="headphones.jpeg" alt="Laptop 2">
+                <h3>HEADPHONES</h3>
+            </div>
+            <div class="product-card">
+                <img src="neckbands.jpeg" alt="Laptop 3">
+                <h3>NECKBANDS</h3>
+            </div>
+            <div class="product-card">
+                <img src="earbuds.jpeg" alt="Laptop 4">
+                <h3>EARBUDS </h3>
+            </div>
+            <div class="product-card">
+                <img src="torch.jpeg" alt="Laptop 1">
+                <h3>TORCH </h3>
+            </div>
+            <div class="product-card">
+                <img src="selfi stick.jpeg" alt="Laptop 2">
+                <h3>SELFIE STICK</h3>
+            </div>
+            <div class="product-card">
+                <img src="portable speaker.jpeg" alt="Laptop 3">
+                <h3>PORTABLE SPEAKER</h3>
+            </div>
+            <div class="product-card">
+                <img src="glass.jpeg" alt="Laptop 4">
+                <h3>GLASS</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-category">
+        <h2>Accessories (2)</h2>
+        <div class="container">
+            <div class="product-card">
+                <img src="cover.jpeg" alt="Laptop 1">
+                <h3>COVER</h3>
+            </div>
+            <div class="product-card">
+                <img src="cable.jpeg" alt="Laptop 2">
+                <h3>CABLE</h3>
+            </div>
+            <div class="product-card">
+                <img src="pendrive.jpeg" alt="Laptop 3">
+                <h3>PENDRIVE</h3>
+            </div>
+            <div class="product-card">
+                <img src="memory card.jpeg" alt="Laptop 4">
+                <h3>MEMORY CARD</h3>
+            </div>
+            <div class="product-card">
+                <img src="keyboard.jpeg" alt="Laptop 1">
+                <h3>KEYBOARD</h3>
+            </div>
+            <div class="product-card">
+                <img src="mouse.jpeg" alt="Laptop 2">
+                <h3>MOUSE</h3>
+            </div>
+            <div class="product-card">
+                <img src="calc.jpeg" alt="Laptop 3">
+                <h3>CALCULATOR</h3>
+            </div>
+            <div class="product-card">
+                <img src="led.jpeg" alt="Laptop 4">
+                <h3>LED</h3>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>Stay connected with Verma Electronics through our social media profiles:</p>
+        <a href="https://www.facebook.com/share/1BeY2MhqGZ/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/fakira_electronic_?igsh=Zmplb2FkNXZjdnNv" target="_blank">Instagram</a>
+        <p>For Further Information: <a href="Contact_us_page.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

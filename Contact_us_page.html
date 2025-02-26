@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verma Electronics (Contact Us)</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Arial', sans-serif;
+            color: #030032;
+        }
+
+        
+        header {
+            background-color: #030032;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #e14e4e;
+            border-radius: 5px;
+        }
+
+        
+        .section {
+            background-color: #030032;
+            color: white;
+            padding: 60px 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .section h1, .section h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+
+        .section h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #e14e4e;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #e14e4e;
+        }
+
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        
+        .text-section {
+            width: 45%;
+            background-color: white;
+            color: #030032; /* Navy Blue Text */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .text-section h4 {
+            font-size: 22px;
+            color: #e14e4e;
+            margin-bottom: 10px;
+        }
+
+        
+        .image-section {
+            width: 45%;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .reverse .text-section {
+            order: 2;
+        }
+
+        .reverse .image-section {
+            order: 1;
+        }
+
+        
+        footer {
+            background-color: #030032;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #e14e4e;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        
+        @media screen and (max-width: 1200px) {
+            .text-section h2 {
+                font-size: 26px;
+            }
+
+            .text-section h4 {
+                font-size: 20px;
+            }
+
+            .section h1 {
+                font-size: 40px;
+            }
+
+            .section h3 {
+                font-size: 28px;
+            }
+
+            .section p {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            .text-section h2 {
+                font-size: 24px;
+            }
+
+            .text-section h4 {
+                font-size: 18px;
+            }
+
+            .section h1 {
+                font-size: 35px;
+            }
+
+            .section h3 {
+                font-size: 25px;
+            }
+
+            .section p {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text-section, .image-section {
+                width: 90%;
+                margin-bottom: 30px;
+            }
+
+            .text-section h2 {
+                font-size: 22px;
+            }
+
+            .text-section h4 {
+                font-size: 16px;
+            }
+
+            .section h1 {
+                font-size: 30px;
+            }
+
+            .section h3 {
+                font-size: 22px;
+            }
+
+            .section p {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .text-section h2 {
+                font-size: 20px;
+            }
+
+            .text-section h4 {
+                font-size: 14px;
+            }
+
+            .section h1 {
+                font-size: 25px;
+            }
+
+            .section h3 {
+                font-size: 20px;
+            }
+
+            .section p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product_listing_page.html">Product List</a></li>
+                <li><a href="product_detail.html">Product Detail</a></li>
+                <li><a href="about_us_page.html">About Us</a></li>
+                <li><a href="contact_us_page.html">Contact Us</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="terms_and_conditions_page.html">Terms & Conditions</a></li>
+                <li><a href="FAQs_page.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="text-section">
+                <h2>Mr. Vijay Verma (Founder & CEO)</h2>
+                <h4>Contact Information</h4>
+                <p><b><u>Full Name:</u></b> Mr. Vijay Verma</p>
+                <p><b><u>Email:</u></b><a href="mailto:vijayverma30328@gmail.com">vijayverma30328@gmail.com</a></p>
+                <p><b><u>Phone:</u></b><a href="tel:+917018115802">+91 7018115802</a></p>
+            </div>
+            <div class="image-section">
+                <img src="vijayverma.jpg" alt="Vijay Verma">
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section reverse">
+        <div class="container">
+            <div class="text-section">
+                <h2>Mr. Chitiz Verma</h2>
+                <h4>Contact Information</h4>
+                <p><b><u>Full Name:</u></b> Mr. Chitiz Verma</p>
+                <p><b><u>Email:</u></b><a href="mailto:vermachitiz82@gmail.com">vermachitiz82@gmail.com</a></p>
+                <p><b><u>Phone:</u></b><a href="tel:+918628831500">+91 8628831500</a></p>
+                <p><b><u>Second Phone:</u></b><a href="tel:+919882165009">+91 9882165009</a></p>
+            </div>
+            <div class="image-section">
+                <img src="chitiz_verma.jpg" alt="Chitiz Verma">
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="text-section">
+                <h2>Fakira Electronics</h2>
+                <h4>Contact Information</h4>
+                <p><b><u>Full Name:</u></b> Fakira Electronics</p>
+                <p><b><u>Email:</u></b><a href="mailto:electronicfakira484@gmail.com">electronicfakira484@gmail.com</a></p>
+                <p><b><u>Phone:</u></b><a href="tel:+919816058486">+91 9816058486</a></p>
+                <p><b><u>Address:</u></b> Ward number - 6, Main Bazar, Near Gandhi Chowk, Hamirpur (HP), 177001</p>
+                <p><b><u>Instagram:</u></b><a href="https://www.instagram.com/fakira_electronic_?igsh=Zmplb2FkNXZjdnNv">Fakira Electronics (Instagram)</a></p>
+                <p><b><u>Facebook:</u></b><a href="https://www.facebook.com/share/1BeY2MhqGZ/">Fakira Electronics (Facebook)</a></p>
+            </div>
+            <div class="image-section">
+                <img src="shoppic.jpg" alt="Fakira Electronics Shop">
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>Stay connected with Fakira Electronics through our social media profiles:</p>
+        <a href="https://www.facebook.com/share/1BeY2MhqGZ/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/fakira_electronic_?igsh=Zmplb2FkNXZjdnNv" target="_blank">Instagram</a>
+        <p>For Further Information: <a href="Contact_us_page.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

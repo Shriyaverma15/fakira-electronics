@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakira Electronics (Home Page)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Arial', sans-serif;
+            color: #030032;
+        }
+
+        header {
+            background-color: #030032;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #e14e4e;
+            border-radius: 5px;
+        }
+
+        .promo-section {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('bg image.jpeg') center/cover no-repeat;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .promo-section h1 {
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .promo-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .promo-section .highlight {
+            font-weight: bold;
+            color: #e14e4e;
+        }
+
+        .hindipromo-section {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        .hindipromo-section h1 {
+            font-size: 30px;
+            color: #030032;
+        }
+
+        footer {
+            background-color: #030032;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #e14e4e;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        figure {
+            margin: 20px auto;
+            position: relative;
+            text-align: center;
+            max-width: 90%;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #ccc;
+        }
+
+        .intro-image {
+            width: 100%;
+            height: auto;
+            max-width: 90%;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 1200px) {
+            .promo-section h1 {
+                font-size: 35px;
+            }
+
+            .promo-section p {
+                font-size: 16px;
+            }
+
+            .hindipromo-section h1 {
+                font-size: 28px;
+            }
+
+            figure {
+                max-width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            .promo-section h1 {
+                font-size: 30px;
+            }
+
+            .promo-section p {
+                font-size: 15px;
+            }
+
+            .hindipromo-section h1 {
+                font-size: 25px;
+            }
+
+            figure {
+                max-width: 70%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .promo-section h1 {
+                font-size: 25px;
+            }
+
+            .promo-section p {
+                font-size: 14px;
+            }
+
+            .hindipromo-section h1 {
+                font-size: 22px;
+            }
+
+            figure {
+                max-width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .promo-section h1 {
+                font-size: 20px;
+            }
+
+            .promo-section p {
+                font-size: 13px;
+            }
+
+            .hindipromo-section h1 {
+                font-size: 20px;
+            }
+
+            figure {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Starting_page.html">Home</a></li>
+                <li><a href="Product_listing_page.html">Product List</a></li>
+                <li><a href="product_detail.html">Product Detail</a></li>
+                <li><a href="about_us_page.html">About Us</a></li>
+                <li><a href="contact_us_page.html">Contact Us</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="terms_and_conditions_page.html">Terms & Conditions</a></li>
+                <li><a href="FAQs_page.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="promo-section">
+        <h1>Welcome to Fakira Electronics</h1>
+        <p>Your One-Stop Tech Shop! 🛒💻</p>
+        <p>Located in the heart of Gandhi Chowk, Hamirpur, Fakira Electronics brings you the latest and best in tech!</p>
+        <p>From smartphones to watches, tablets, wall clocks, and a wide variety of accessories, we have it all to meet your every need. 📱⌚</p>
+        <p><span class="highlight">🔝💸</span> Whether you're upgrading your tech or looking for the perfect gadget, we offer quality products at unbeatable prices!</p>
+        <p>Visit us today and explore the best of electronics. Your perfect gadget is just a visit away! ✨🚶‍♂️</p>
+    </section>
+
+    <section class="hindipromo-section">
+        <h1>ग्राहक का हक है अच्छा माल लेना!</h1>
+    </section>
+
+    <section>
+        <img src="fakira electronics.png" alt="Promotional Image" class="intro-image">
+    </section>
+
+    <section>
+        <figure>
+            <video autoplay muted controls>
+                <source src="ipadapple.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+
+        <figure>
+            <video autoplay muted controls>
+                <source src="samsunggalaxy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+
+        <figure>
+            <video autoplay muted controls>
+                <source src="iphoneapple.mp4" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+
+        <figure>
+            <video autoplay muted controls>
+                <source src="watchapple.mp4" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+
+        <figure>
+            <video autoplay muted controls>
+                <source src="realmexiami.mp4" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+    </section>
+
+    <section class="hindipromo-section">
+        <h1>"ग्राहक राजा होता है, और राजा कभी उधार नहीं मांगता।"</h1>
+    </section>
+
+    <footer>
+        <p>Stay connected with Fakira Electronics through our social media profiles:</p>
+        <a href="https://www.facebook.com/share/1BeY2MhqGZ/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/fakira_electronic_?igsh=Zmplb2FkNXZjdnNv" target="_blank">Instagram</a>
+        <p>For Further Information: <a href="Contact_us_page.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
